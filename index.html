@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Tempo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="pesquisa">
+    <input id="cidade" placeholder="Procurar cidade…" required>
+    <button>🔍</button>
+  </form>
+  <button id="unidade" type="button">°F</button>
+  <button id="localizacao" type="button">📍 A minha localização</button>
+
+  <p id="estado">A obter a tua localização…</p>
+
+  <section id="atual" hidden>
+    <h1 id="local"></h1>
+    <p id="hora"></p>
+    <div id="icone"></div>
+    <p id="temperatura"></p>
+    <p id="descricao"></p>
+    <ul id="detalhes"></ul>
+  </section>
+
+  <section id="previsao"></section>
+
+  <footer>
+    Dados meteorológicos: <a href="https://open-meteo.com/" target="_blank">Open-Meteo.com</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
