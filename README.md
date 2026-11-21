@@ -2,7 +2,7 @@
 
 Uma aplicação web simples que mostra o tempo atual e a previsão para 7 dias, usando a tua localização ou qualquer cidade do mundo.
 
-🔗 **Ver a app online:** https://O-TEU-UTILIZADOR.github.io/app-tempo/
+🔗 **Ver a app online:** (https://github.com/Simao-PB/Wheather-app/)
 
 ## ✨ Funcionalidades
 
