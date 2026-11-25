@@ -29,7 +29,7 @@ Nenhuma das APIs precisa de chave nem de registo.
 
 1. Clona o repositório:
    ```bash
-   git clone https://github.com/O-TEU-UTILIZADOR/app-tempo.git
+   git clone https://github.com/Simao-PB/app-tempo.git
    ```
 2. Abre a pasta no VS Code.
 3. Abre o `index.html` com a extensão **Live Server**.
