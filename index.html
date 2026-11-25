@@ -4,33 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O Tempo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <form id="pesquisa">
-    <input id="cidade" placeholder="Procurar cidade…" required>
-    <button>🔍</button>
-  </form>
-  <button id="unidade" type="button">°F</button>
-  <button id="localizacao" type="button">📍 A minha localização</button>
+<main class="app">
+  <header>
+    <form id="pesquisa" class="pesquisa">
+      <input id="cidade" placeholder="Procurar cidade…" required autocomplete="off">
+      <button aria-label="Pesquisar">🔍</button>
+    </form>
+    <div class="acoes">
+      <button id="localizacao" type="button">📍 A minha localização</button>
+      <button id="unidade" type="button">°F</button>
+    </div>
+  </header>
 
   <p id="estado">A obter a tua localização…</p>
 
-  <section id="atual" hidden>
+  <section id="atual" class="cartao atual" hidden>
     <h1 id="local"></h1>
     <p id="hora"></p>
-    <div id="icone"></div>
-    <p id="temperatura"></p>
+    <div class="principal">
+      <div id="icone"></div>
+      <p id="temperatura"></p>
+    </div>
     <p id="descricao"></p>
     <ul id="detalhes"></ul>
   </section>
 
-  <section id="previsao"></section>
+  <section class="cartao">
+    <h2>Próximos 7 dias</h2>
+    <div id="previsao"></div>
+  </section>
 
   <footer>
     Dados meteorológicos: <a href="https://open-meteo.com/" target="_blank">Open-Meteo.com</a>
   </footer>
+  </main>
 
-  <script src="app.js"></script>
+  <script type="module" src="scripts/app.js"></script>
 </body>
 </html>
